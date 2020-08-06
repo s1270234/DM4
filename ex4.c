@@ -3,6 +3,14 @@
 
 int main(){
   int i, n, heads=0, tails=0;
+  
+  //name part
+  char str[8];
+  printf("What your name? ");
+  scanf("%s",str);
+  printf("Hi!%s",str);
+  printf("\n");
+  
   //coin part
   for(i=0;i<3;i++){
     n = rand();
