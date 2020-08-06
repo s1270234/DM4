@@ -4,17 +4,6 @@
 int main(){
   int i, n, heads=0, tails=0;
 
-  //name part
-  char str[8];
-
-  printf("What your name? ");
-
-  scanf("%s",str);
-
-  printf("Hi!%s",str);
-
-  printf("\n");
-
   //coin part
   for(i=0;i<3;i++){
 
@@ -35,9 +24,9 @@ int main(){
   printf("Heads: %d, Tails: %d\n", heads,tails);
   //won or lost part
   if(heads >=2){
-    printf("%s is won!",str);
+    printf("You won!");
   }else{
-    printf("%s is lost.",str);
+    printf("You lost.");
   }
   return 0;
 }
