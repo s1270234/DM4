@@ -3,14 +3,15 @@
 
 int main(){
   int i, n, heads=0, tails=0;
-  
+
   //name part
   char str[8];
-  printf("What your name? ");
+  printf("Who are you? \n>");
   scanf("%s",str);
-  printf("Hi!%s",str);
+  printf("Hello,%s!\n",str);
+  printf("Tossing a coin...");
   printf("\n");
-  
+
   //coin part
   for(i=0;i<3;i++){
     n = rand();
@@ -23,10 +24,11 @@ int main(){
     }
   }
   printf("Heads: %d, Tails: %d\n", heads,tails);
-    //won or lost part
+
+  //won or lost part
   if(heads > tails)
-    printf("you won!");
+    printf("%s won!",str);
   else
-    printf("you lost.");
-    return 0;
+    printf("%s lost.",str);
+  return 0;
 }
