@@ -18,10 +18,9 @@ int main(){
   printf("Heads: %d, Tails: %d\n", heads,tails);
   
   //won or lost part
-  if(heads >=2){
-    printf("You won!");
-  }else{
-    printf("You lost.");
-  }
+  if(heads > tails)
+    printf("you won!");
+  else
+    printf("you lost.");
   return 0;
 }
