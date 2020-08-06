@@ -15,5 +15,10 @@ int main(){
     }
   }
   printf("Heads: %d, Tails: %d\n", heads,tails);
+    //won or lost part
+  if(heads > tails)
+    printf("you won!");
+  else
+    printf("you lost.");
     return 0;
 }
